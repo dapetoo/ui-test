@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:voomsway_task_app/widgets/card_dashboard.dart';
-import 'package:voomsway_task_app/widgets/items_list.dart';
+import 'package:voomsway_task_app/widgets/widgets.dart';
 
 class ActivitiesTab extends StatelessWidget {
   @override
@@ -59,6 +57,7 @@ class ActivitiesTab extends StatelessWidget {
             SizedBox(
               height: 8.0,
             ),
+            //ListView.builder(itemBuilder: null),
             ItemsList2(),
             SizedBox(
               height: 8.0,

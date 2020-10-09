@@ -75,8 +75,8 @@ class HomeScreen extends StatelessWidget {
                 'Activities',
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.w600),
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             Tab(
