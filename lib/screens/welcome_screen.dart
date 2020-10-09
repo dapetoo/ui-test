@@ -25,14 +25,13 @@ class WelcomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Color(0xFF4835CA)),
           ),
-          Center(
-              child: Text(
+          Text(
             'Contract, Bill, and Payment \n tracking for \n individuals and small businesses',
             textAlign: TextAlign.center,
             style: TextStyle(
-              letterSpacing: 1.6,
+          letterSpacing: 1.6,
             ),
-          )),
+          ),
           Container(
             margin: EdgeInsets.only(right: 15.0, left: 15.0),
             child: Image(
@@ -40,33 +39,40 @@ class WelcomeScreen extends StatelessWidget {
               fit: BoxFit.contain,
             ),
           ),
-          SizedBox(
-            width: double.infinity,
-            height: 50.0,
-            child: Padding(
-              padding: const EdgeInsets.only(right: 40.0, left: 40),
-              child: RaisedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => NavigationScreen()));
-                  },
-                  elevation: 3.0,
-                  color: Color(0xFFEB7549),
-                  //fillColor:
-                  child: Text(
-                    'Get started',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                        color: Colors.grey.shade300,
-                        width: 2.0,
-                      ),
-                      borderRadius: BorderRadius.circular(15))),
-            ),
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              Image.asset('assets/images/background.png', fit: BoxFit.fill,),
+              Positioned(child: Center(child: Text('Get Started', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),)))
+            ],
           ),
+          // SizedBox(
+          //   width: double.infinity,
+          //   height: 50.0,
+          //   child: Padding(
+          //     padding: const EdgeInsets.only(right: 40.0, left: 40),
+          //     child: RaisedButton(
+          //         onPressed: () {
+          //           Navigator.push(
+          //               context,
+          //               MaterialPageRoute(
+          //                   builder: (context) => NavigationScreen()));
+          //         },
+          //         elevation: 3.0,
+          //         color: Color(0xFFEB7549),
+          //         //fillColor:
+          //         child: Text(
+          //           'Get started',
+          //           style: TextStyle(color: Colors.white),
+          //         ),
+          //         shape: RoundedRectangleBorder(
+          //             side: BorderSide(
+          //               color: Colors.grey.shade300,
+          //               width: 2.0,
+          //             ),
+          //             borderRadius: BorderRadius.circular(15))),
+          //   ),
+          // ),
         ],
       ),
     );
